@@ -1,3 +1,130 @@
 #intro {
-    
+    width: 100%;
+    height: 2500px;
+    background: #00008A;
+    overflow: hidden;
+    position: relative;
+}
+
+/* intro_title */
+.intro_title {
+    width: 100%;
+    height: 1250px;
+    position: absolute;
+    top: 40px; right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.intro_title h1 {
+    font-size: 200px;
+    font-weight: 900;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.intro_title p {
+    font-size: 70px;
+    font-weight: 900;
+    color: #1E8FFF;
+    margin-right: 15px;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.intro_title .deco1 {
+    position: absolute;
+    top: -39px;
+    left: 0px;
+}
+.intro_title .deco2 {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100px;
+    padding: 300px 0 150px 20px;
+}
+.intro_title .deco2:hover {
+    transform: scale(1.5);
+}
+
+/* intro_text */
+.intro_text:hover {
+    filter: grayscale(0%);
+} 
+.intro_text {
+    width: 80%;
+    height: 600px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.intro_text .timg {
+    width: 40%;
+    border-radius: 50px;
+}
+.intro_text .text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 0 100px;
+}
+.intro_text .text em {
+    color: #FF1492;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1290px){
+    .intro_title h1 {
+        font-size: 150px;
+    }
+}
+@media (max-width: 960px) {
+    .intro_title h1 {
+        font-size: 100px;
+    }
+    .intro_title p {
+        font-size: 70px;
+    }
+    .intro_text .deco3 {
+        top: 70%;
+    }
+}
+@media (max-width: 768px){
+    .intro_text .img_text {
+        display: inline-block;
+    }
+    .intro_text .img_text .timg {
+        width: 50%;
+        padding: 20px;
+    }
+    .intro_text .img_text .text {
+        font-size: 15px;
+        line-height: 1.3;
+        padding: 0;
+    }
+    .intro_text .deco3 {
+        position: absolute;
+        top: 75%;
+        left: 0;
+    }
+}
+@media (max-width: 600px){
+    .intro_title h1 {
+        font-size: 70px;
+        margin-top: 12px;
+    }
 }

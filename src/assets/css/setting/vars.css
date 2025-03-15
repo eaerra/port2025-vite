@@ -19,4 +19,8 @@ text-rendering: optimizeLegibility;
 body {
 color: var(--black100);
 background-color: var(--mainBg-color);
+cursor: url('../../img/cursor0.png') 32 32, auto;
+}
+a:hover {
+    cursor: url('../../img/cursor1.png') 32 32, auto;
 }

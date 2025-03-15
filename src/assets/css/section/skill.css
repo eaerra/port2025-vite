@@ -1,3 +1,127 @@
 #skill {
-    
+    width: 100%;
+    height: 2500px;
+    background: #00008A;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.skill_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.skill_desc > div {
+    margin-bottom: 20px;
+}
+.skill_title {
+    font-size: 422px;
+    line-height: 1.2;
+    color: #1E8FFF;
+    font-weight: 900;
+    margin-left: 10px;
+}
+.skill_desc span {
+    font-size: 100px;
+    color: #1E8FFF;
+    font-weight: 800;
+}
+.skill_desc .adobe_img {
+    display: flex;
+}
+.skill_desc .adobe_img img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transition: all 0.3s;
+}
+.skill_desc .adobe_img img:hover {
+    transform: scale(1.2);
+}
+.skill_desc ul {
+    display: flex;
+}
+.skill_desc ul li a {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.skill_desc ul li a:hover {
+    cursor: url('../../img/cursor0.png') 32 32, auto;
+    color: #FF1492;
+}
+.skill_desc .num1 {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+}
+.skill_desc .num2 {
+    position: absolute;
+    top: 41%;
+    right: 5%;
+}
+.skill_desc .num3 {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+.skill_desc .num4 {
+    position: absolute;
+    top: 73%;
+    left: 5%;
+}
+
+/* skill_deco */
+.skill_deco1 {
+    background-image: url(../../img/flower.png);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 14%;
+    right: 5%;
+    z-index: -3;
+}
+.skill_deco2 {
+    background-image: url(../../img/flower.png);
+    width: 520px;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 65%;
+    left: -7%;
+    z-index: -1;
+}
+.skill_deco3 {
+    background-image: url(../../img/black.png);
+    width: 100%;
+    height: 1200px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    z-index: -2;
+}
+
+@media (max-width: 768px){
+    .skill_title {
+        font-size: 200px;
+    }
+    .skill_desc span {
+        font-size: 45px;
+    }
+    .skill_desc .num1 {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+    .skill_desc ul li a {
+        font-size: 20px;
+    }
 }

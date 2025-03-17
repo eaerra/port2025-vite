@@ -1,3 +1,157 @@
 #site {
-    
+    width: 100%;
+    height: 2500px;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.site_title {
+    font-size: 422px;
+    color: #1E8FFF;
+    font-weight: 900;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.site_inner a span {
+    font-size: 100px;
+    color: #1E8FFF;
+    font-weight: 800;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: -40px;
+}
+.site_inner a span em {
+    font-size: 20px;
+    color: #fff;
+}
+.site_inner > a {
+    display: block;
+    width: 550px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+}
+.site_inner > a:hover {
+    width: 650px;
+    height: 650px;
+}
+.web {
+    background-image: url(../../img/web.png);
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+.responsive {
+    background-image: url(../../img/responsive.png);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.mega {
+    background-image: url(../../img/mega.png);
+    position: absolute;
+    top: 75%;
+    left: 0;
+}
+
+/* site_deco1 */
+.site_deco1 {
+    position: absolute;
+    top: 23%;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+.color3 {
+    position: relative;
+}
+.square {
+    width: 70px;
+    height: 70px;
+    background-color: #F16522;
+    position: absolute;
+    top: 0;
+    right: 400px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #FFA400;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 190px;
+    right: 100px;
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: #FF1492;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    right: 400px;
+    transition: all 0.3s;
+}
+
+/* site_deco2 */
+.site_deco2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 100%;
+    z-index: -1;
+}
+.color3 {
+    position: relative;
+}
+.square {
+    width: 70px;
+    height: 70px;
+    background-color: #F16522;
+    position: absolute;
+    top: 0;
+    right: 400px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #FFA400;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 190px;
+    right: 100px;
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: #FF1492;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    right: 400px;
+    transition: all 0.3s;
+}
+
+/* 미디어쿼리 */
+@media (max-width: 768px){
+    .site_title {
+        font-size: 200px;
+    }
+    .site_inner a span {
+        font-size: 45px;
+    }
+}
+@media (max-width: 600px){
+    .site_inner > a:hover {
+        width: 560px;
+        height: 560px;
+    }
 }

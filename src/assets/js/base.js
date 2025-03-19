@@ -3,6 +3,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function effect() {
+export function base() {
     
 }

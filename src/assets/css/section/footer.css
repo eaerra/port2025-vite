@@ -1,2 +1,13 @@
 #footer {
+    width: 100%;
+    height: 70px;
+    background-color: #00008A;
+}
+#footer > p {
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
 }

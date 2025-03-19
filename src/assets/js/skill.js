@@ -1,6 +1,6 @@
-export function skill() {
-    console.log(skill)
+import gsap from "gsap";
 
+export function skill() {
     gsap.to(".skill_deco1", {
         rotation: 360,    // 360도 회전
         duration: 9,      // 9초 동안

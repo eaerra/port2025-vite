@@ -1,6 +1,7 @@
-export function intro() {
-    console.log(intro)
+import gsap from "gsap";
 
+export function intro() {
+    
     gsap.to('.intro_title h1', {
         opacity: 1,               // opacity를 1로 변경
         transform: 'translateY(0)', // translateY를 0으로 설정하여 자연스럽게 내려옴

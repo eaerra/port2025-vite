@@ -1,3 +1,190 @@
 #effect {
-    
+    width: 100%;
+    height: 1800px;
+    background: #00008A;
+    position: relative;
+    padding: 100px 0 0 0;
+    z-index: 0;
+}
+.effect_title {
+    font-size: 350px;
+    color: #1E8FFF;
+    font-weight: 900;
+    padding: 25px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+.effect_wrap {
+    position: relative;
+    height: 1500px;
+    z-index: 2;
+}
+.effect_wrap a:hover {
+    cursor: url('../../img/cursor0.png') 32 32, auto;
+}
+.effect_item {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.effect_item h2 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    transition: all 0.3s;
+}
+.effect_item:hover {
+    width: 310px;
+    height: 310px;
+}
+.effect_item:hover h2 {
+    margin-top: -85px;
+}
+.effect_item img {
+    border-radius: 50%;
+    margin-top: -260px;
+    transition: all 0.3s;
+    justify-content: center;
+}
+.effect_item:hover img {
+    margin-top: 0;
+}
+.effect_item .view {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    transition: all 0.3s;
+}
+.effect_item .view:hover {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* .effect_item.e1~ */
+.effect_item.e1 {
+    background-color: #FFA400;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+.effect_item.e2 {
+    background-color: #FF1492;
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+.effect_item.e3 {
+    background-color: #1E8FFF;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.effect_item.e4 {
+    background-color: #FF6347;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.effect_item.e5 {
+    background-color: #FF1492;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.effect_item.e6 {
+    background-color: #FFA400;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+
+/* effect_deco */
+.effect_deco {
+    display: flex;
+}
+.effect_deco1 {
+    width: 100%;
+    height: 600px;
+    background-image: url(../../img/black2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* 미디어쿼리 */
+@media (max-width: 1290px){
+    .effect_item.e1 {
+        left: 25%;
+    }
+    .effect_item.e2 {
+        right: 25%;
+    }
+    .effect_item.e3 {
+        left: 15%;
+    }
+    .effect_item.e4 {
+        right: 15%;
+    }
+    .effect_item.e5 {
+        left: 25%;
+    }
+    .effect_item.e6 {
+        right: 25%;
+    }
+}
+@media (max-width: 1024px){
+    .effect_title {
+        font-size: 250px;
+    }
+    .effect_item.e1 {
+        left: 20%;
+    }
+    .effect_item.e2 {
+        right: 20%;
+    }
+    .effect_item.e3 {
+        left: 5%;
+    }
+    .effect_item.e4 {
+        right: 5%;
+    }
+    .effect_item.e5 {
+        left: 20%;
+    }
+    .effect_item.e6 {
+        right: 20%;
+    }
+}
+@media (max-width: 768px){
+    .effect_title {
+        font-size: 150px;
+    }
+    .effect_item.e1 {
+        left: 5%;
+    }
+    .effect_item.e2 {
+        right: 5%;
+    }
+    .effect_item.e3 {
+        left: 5%;
+    }
+    .effect_item.e4 {
+        right: 5%;
+    }
+    .effect_item.e5 {
+        left: 5%;
+    }
+    .effect_item.e6 {
+        right: 5%;
+    }
 }

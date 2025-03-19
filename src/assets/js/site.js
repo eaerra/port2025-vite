@@ -1,5 +1,6 @@
+import gsap from "gsap";
+
 export function site() {
-    console.log(site)
 
     gsap.to(".square", {
         rotation: -90,    // 도 회전
